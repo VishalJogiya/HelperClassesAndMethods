@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/eight_dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/company_logo_user_profile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:src="@drawable/pro_user"
+            android:text="COMPANY LOGO"
+            android:textColor="@color/white"
+
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_user_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginBottom="@dimen/sixteen_dp"
+            android:layout_marginRight="@dimen/sixteen_dp"
+            app:layout_anchor="@id/company_logo_user_profile"
+            app:layout_anchorGravity="bottom|end"
+            android:src="@drawable/edit_white"
+            app:fabSize="mini" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
