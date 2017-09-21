@@ -27,7 +27,9 @@ import static android.content.Context.INPUT_METHOD_SERVICE;
  */
 public class HelperStaticMethods {
     private static final String TAG = HelperStaticMethods.class.getSimpleName();
-
+    public static final String DATE_FORMAT_YYYY_MM_DD = "yyyy-MM-dd";
+    public static final String DATE_FORMAT_DD_MM_YYYY = "dd-MM-yyyy";
+    public static final String DATE_FORMAT_DD_MMM_YYYY = "dd MMM yyyy";
 
     public static void setStatusBarColor(AppCompatActivity activity, int color) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
